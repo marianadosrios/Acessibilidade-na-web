@@ -1,201 +1,252 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+/* Importação das fontes Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
 
+/* Variáveis de cores para o tema e alto contraste */
 :root {
-    --laranja-claro:#000000;
+    --cor-primaria: #ff69b480; /* Preto quase puro */
+    --cor-secundaria: #ffffff; /* Cinza bem claro */
+    --cor-destaque: #D96C4E; /* Terracota */
+    --cor-texto: #495057; /* Cinza escuro */
+    --cor-texto-claro: #ffffff;
+
+    /* Cores para o modo de alto contraste */
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ffd700;
+    --alto-contraste-link: #ffacda; /* Ouro */
 }
 
+/* Estilo geral do corpo e fontes */
 body {
     font-size: 1rem;
-    font-family: 'montserrat';
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-secundaria);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+h1, h2, h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.lead {
+    color: var(--cor-texto);
+}
+
+/* Header e navegação */
 header {
-    background-color: #ff7ece;
+    background-color: var(--cor-secundaria);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-
-section {
-    padding-bottom: 5rem;
-}
-
 
 .nav-link {
-    color:
-    #000000;
+    color: var(--cor-primaria);
     font-weight: 600;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
 }
 
-.inicio-fundo {
-    /* aula 3 */
-    background-image: url('img/4965007.jpg');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: right;
-    border-radius: 80px;
-    width: 100%;
-    height: 606px;
-    padding: 40px;
-    margin: 0 auto;
-}
-
-/* posicionamento para a imagem à direita */
-.img-inicio {
+.nav-link::after {
+    content: '';
     position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--cor-destaque);
+    transition: width 0.3s ease;
 }
 
-
-.esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
 }
 
-
-.botao-inicio {
-    background-color: var(--laranja-claro);
-    border-radius: 30px;
-    border: none;
-    width: 14em;
-    height: 3em;
-    align-content: center;
-
+.nav-img {
+    max-width: 120px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
-.display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
-}
-
-
-#tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
-}
-
-#tropicalia .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
-}
-
-
-h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--laranja-claro);
-}
-
-#galeria {
-    background-color: #ffd5d5;
-
-}
-
-.fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
-    background-size: 180px 180px;
-}
-
-#contato {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
-    padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
-}
-
-.formulario {
-    background-color: #ffd3d3;
-    padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
-    border-radius: 10px;
-    /* Borda arredondada para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
-    font-weight: bold;
-}
-
-.formulario button {
-    background-color: #9e877d;
-    border: none;
-    font-weight: bold;
-}
-
-.form-control {
-    background-color: #F1EDEF;
-}
-.menu-acessibilidade{
+/* Acessibilidade */
+.menu-acessibilidade {
     position: fixed;
-    top:2rem;
-    right:20px;
+    top: 1rem;
+    right: 1rem;
     z-index: 1000;
 }
 
-.rotacao-botao{
-    transform: rotate(-90deg);
-    transform-origin: right center;
+.opcoes-acessibilidade {
+    display: none;
+    margin-top: 10px;
 }
 
-.opcoes-acessibilidade{
-    margin-top:10px;
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+    transition: all 0.2s ease;
+}
+
+.opcoes-acessibilidade button:hover {
+    transform: scale(1.1);
+}
+
+.apresenta-lista {
     display: flex;
     flex-direction: column;
 }
 
-.opcoes-acessibilidade button{
-    margin-bottom: 5px;
-}
-.apresenta-lista{
-    display: none;
+/* Seções e layout */
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
-.alto-contraste{
+#tropicalia {
+    background: var(--cor-secundaria);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Nova seção de integrantes */
+#integrantes .card {
+    background: var(--cor-secundaria);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%; /* Proporção para imagens quadradas */
+    display: block;
+}
+
+.card-img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.card-glow {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    transform: translate(-50%, -50%) scale(0);
+    background-image: radial-gradient(circle, #ff69b480 0%, rgba(255, 105, 180, 0) 70%); /* Gradiente rosa suave */
+    border-radius: 50%;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 0;
+}
+
+.integrante-card:hover .card-glow {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.integrante-card:hover img {
+    transform: scale(1.05);
+}
+
+#galeria img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#galeria img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+#contato .card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Botões */
+.btn-dark {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-dark:hover {
+    background-color: var(--cor-destaque);
+    transform: translateY(-2px);
+}
+
+.btn-lg.rounded-pill {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-primaria) !important;
+    color: var(--cor-texto-claro);
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-icons a:hover i {
+    transform: scale(1.2);
+    color: var(--cor-destaque);
+}
+
+/* Modo de alto contraste */
+body.alto-contraste {
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
 
-.alto-contraste header,
-.alto-contraste footer,
-.alto-contraste .formulario{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+body.alto-contraste header,
+body.alto-contraste .card,
+body.alto-contraste #tropicalia {
+    background-color: var(--alto-contraste-fundo) !important;
+    border-color: var(--alto-contraste-link) !important;
 }
 
-.alto-contraste .nav-link{
-    color: var(--alto-contraste-link);
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h5,
+body.alto-contraste .nav-link,
+body.alto-contraste .btn-dark {
+    color: var(--alto-contraste-texto) !important;
 }
 
-.alto-contraste .botao-inicio,
-.alto-contraste .formulario button,
-.alto-contraste .btn-primary{
+body.alto-contraste .nav-link:hover,
+body.alto-contraste .nav-link::after,
+body.alto-contraste .btn-dark:hover {
+    color: var(--alto-contraste-fundo);
     background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo)
 }
 
-.alto-contraste #tropicalia {
-    background: none;
+body.alto-contraste .btn-dark {
+    background-color: var(--alto-contraste-link);
 }
 
-.alto-contraste #galeria {
+body.alto-contraste .lead,
+body.alto-contraste .text-muted,
+body.alto-contraste .form-label {
+    color: var(--alto-contraste-texto) !important;
+}
+
+body.alto-contraste .form-control {
     background-color: var(--alto-contraste-fundo);
-}
-.alto-contraste .fundo-galeria {
-    background: none;
+    color: var(--alto-contraste-texto);
+    border-color: var(--alto-contraste-link);
 }
