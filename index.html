@@ -2,177 +2,324 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Patrulha Salvadora</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Patrulha Salvadora</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="p-4 p-md-5">
-        <nav class="container d-flex justify-content-between align-items-center">
-            <a href="#inicio" aria-label="Página inicial">
-                <img src="Patrulha_Salvadora_(Div_-_Lourival_Ribeiro_-_SBT).webp" class="nav-img img-fluid" loading="lazy" alt="Logotipo da série Patrulha Salvadora">
-            </a>
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>
-            <div id="acessibilidade" class="menu-acessibilidade">
-                <button id="botao-acessibilidade" class="btn btn-dark fw-bold" aria-expanded="false" aria-controls="opcoes-acessibilidade">Salve</button>
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista p-2 shadow rounded-3">
-                    <button id="aumentar-fonte" class="btn btn-sm btn-dark" aria-label="Aumentar o tamanho da fonte">A+</button>
-                    <button id="diminuir-fonte" class="btn btn-sm btn-dark" aria-label="Diminuir o tamanho da fonte">A-</button>
-                    <button id="alterna-contraste" class="btn btn-sm btn-dark" aria-label="Alternar o modo de alto contraste"><i class="bi bi-circle-half"></i></button>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <header class="p-4 p-md-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <a href="#inicio" aria-label="Página inicial">
+                <img src="Patrulha_Salvadora_(Div_-_Lourival_Ribeiro_-_SBT).webp" class="nav-img img-fluid" loading="lazy" alt="Logotipo da série Patrulha Salvadora">
+            </a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-dark fw-bold" aria-expanded="false" aria-controls="opcoes-acessibilidade">Salve</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista p-2 shadow rounded-3">
+                    <button id="aumentar-fonte" class="btn btn-sm btn-dark" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-sm btn-dark" aria-label="Diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-sm btn-dark" aria-label="Alternar o modo de alto contraste"><i class="bi bi-circle-half"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <main class="container my-5">
-        <section id="inicio" class="hero-section my-5">
-            <div class="row align-items-center">
-                <div class="col-md-6 order-md-1 text-center text-md-start">
-                    <h1 class="display-3 fw-bold mb-4">Boas-vindas à Patrulha Salvadora</h1>
-                    <p class="lead text-muted">Junte-se à turma de Carrossel nesta aventura heroica.</p>
-                    <a href="#tropicalia" class="btn btn-lg btn-dark rounded-pill mt-4">Descubra mais</a>
-                </div>
-                <div class="col-md-6 order-md-2 d-none d-md-block">
-                    <img src="Patrulha-Salvadora-Elenco-Carrossel.webp" class="img-fluid rounded-5 shadow-lg" loading="lazy" alt="Imagem do elenco da Patrulha Salvadora">
-                </div>
-            </div>
-        </section>
+    <main class="container my-5">
+        <section id="inicio" class="hero-section my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-1 text-center text-md-start">
+                    <h1 class="display-3 fw-bold mb-4">Boas-vindas à Patrulha Salvadora</h1>
+                    <p class="lead text-muted">Junte-se à turma de Carrossel nesta aventura heroica.</p>
+                    <a href="#tropicalia" class="btn btn-lg btn-dark rounded-pill mt-4">Descubra mais</a>
+                </div>
+                <div class="col-md-6 order-md-2 d-none d-md-block">
+                    <img src="patrulha.jpg" class="img-fluid rounded-5 shadow-lg" loading="lazy" alt="Imagem do elenco da Patrulha Salvadora">
+                </div>
+            </div>
+        </section>
 
-        <section id="tropicalia" class="py-5 bg-light-subtle rounded-5 my-5">
-            <div class="container py-4">
-                <div class="row align-items-center flex-row-reverse">
-                    <div class="col-md-6">
-                        <h2 class="display-5 fw-bold mb-4">O que foi a Patrulha Salvadora?</h2>
-                        <p class="lead text-muted">
-                            A Patrulha Salvadora foi um spin-off da famosa novela infantil Carrossel, que colocou os personagens já conhecidos — como Cirilo, Maria Joaquina e Daniel — em uma nova aventura.
-                        </p>
-                        <p>
-                            Na série, que foi ao ar entre 2014 e 2015, a turma descobre que tem superpoderes e, juntos, formam a Patrulha Salvadora para proteger a cidade de Kauzópolis. Era uma mistura de aventura e super-heróis, com a mesma turma que o público já adorava.
-                        </p>
-                    </div>
-                    <div class="col-md-6 text-center text-md-start">
-                        <img src="patrulha-salvadora-sbt.webp" class="img-fluid rounded-circle shadow-lg" loading="lazy" alt="Grupo de crianças posando como super-heróis">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="tropicalia" class="py-5 bg-light-subtle rounded-5 my-5">
+            <div class="container py-4">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-md-6">
+                        <h2 class="display-5 fw-bold mb-4">O que foi a Patrulha Salvadora?</h2>
+                        <p class="lead text-muted">
+                            A Patrulha Salvadora foi um spin-off da famosa novela infantil Carrossel, que colocou os personagens já conhecidos — como Cirilo, Maria Joaquina e Daniel — em uma nova aventura.
+                        </p>
+                        <p>
+                            Na série, que foi ao ar entre 2014 e 2015, a turma descobre que tem superpoderes e, juntos, formam a Patrulha Salvadora para proteger a cidade de Kauzópolis. Era uma mistura de aventura e super-heróis, com a mesma turma que o público já adorava.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-start">
+                        <img src="patrulha-pauta2.webp" class="img-fluid rounded-circle shadow-lg" loading="lazy" alt="Grupo de crianças posando como super-heróis">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="integrantes" class="py-5 my-5">
-            <h2 class="display-5 fw-bold text-center mb-5">Conheça os Integrantes</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
-                        <div class="card-img-container">
-                            <img src="cirilo.webp" class="card-img-top rounded-top-4" alt="Cirilo, o patrulheiro 'Invencível'">
-                            <div class="card-glow"></div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Cirilo - Super-herói: Invencível</h5>
-                            <p class="card-text text-muted">Um dos corajosos integrantes da equipe, o herói Invencível é o alter ego de Cirilo. Sua missão é proteger a todos com sua bravura e bom coração.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
-                        <div class="card-img-container">
-                            <img src="maria-joaquina.webp" class="card-img-top rounded-top-4" alt="Maria Joaquina, a patrulheira 'Super-Poderosa'">
-                            <div class="card-glow"></div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Maria Joaquina - Super-herói: Super-Poderosa</h5>
-                            <p class="card-text text-muted">Inteligente e decidida, Maria Joaquina se transforma na Super-Poderosa, usando seus dons para ajudar a combater os vilões e resolver os mistérios da cidade.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
-                        <div class="card-img-container">
-                            <img src="daniel.webp" class="card-img-top rounded-top-4" alt="Daniel, o patrulheiro 'Justiceiro'">
-                            <div class="card-glow"></div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Daniel - Super-herói: Justiceiro</h5>
-                            <p class="card-text text-muted">Conhecido por sua liderança e senso de justiça, Daniel é o Justiceiro da Patrulha, sempre pronto para defender os mais fracos e lutar pela verdade.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="galeria" class="py-5 my-5">
-            <h2 class="display-5 fw-bold text-center mb-5">Galeria</h2>
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-sm-6 col-md-3">
-                        <img src="1407690894sbt_patrulha_salvadora_geladeira.webp" class="img-fluid rounded-4 shadow-sm" loading="lazy" alt="Cena da série com os personagens em frente a uma geladeira">
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <img src="1390236018patrulha_salvadora_perde_audiencia_derrota_record_fixed_large.webp" class="img-fluid rounded-4 shadow-sm" loading="lazy" alt="Imagem promocional da Patrulha Salvadora">
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <img src="Elenco-Patrulha-Salvadora1.jpg" class="img-fluid rounded-4 shadow-sm" loading="lazy" alt="Elenco da série com seus uniformes de heróis">
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <img src="patrulha-salvadora-elenco-sbt_65e02f9c084830a42747acf21560f9f8850f7b3b.jpeg" class="img-fluid rounded-4 shadow-sm" loading="lazy" alt="Elenco da Patrulha Salvadora posando para foto oficial">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="integrantes" class="py-5 my-5">
+            <h2 class="display-5 fw-bold text-center mb-5">Conheça os Integrantes</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="cirilo620.webp" class="card-img-top rounded-top-4" alt="Cirilo, o patrulheiro 'Invencível'">
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Cirilo - Super-herói: Invencível</h5>
+                            <p class="card-text text-muted">Um dos corajosos integrantes da equipe, o herói Invencível é o alter ego de Cirilo. Sua missão é proteger a todos com sua bravura e bom coração.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="larissa1.webp" class="card-img-top rounded-top-4" alt="Maria Joaquina, a patrulheira 'Super-Poderosa'">
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Maria Joaquina - Super-herói: Super-Poderosa</h5>
+                            <p class="card-text text-muted">Inteligente e decidida, Maria Joaquina se transforma na Super-Poderosa, usando seus dons para ajudar a combater os vilões e resolver os mistérios da cidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="DANIEL.jpg" class="card-img-top rounded-top-4" alt="Daniel, o patrulheiro 'Justiceiro'">
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Daniel - Super-herói: Justiceiro</h5>
+                            <p class="card-text text-muted">Conhecido por sua liderança e senso de justiça, Daniel é o Justiceiro da Patrulha, sempre pronto para defender os mais fracos e lutar pela verdade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="carmen-carrilho_stefany-vaz_foto_lourival-ribeiro_sbt-176-copy.jpg" class="card-img-top rounded-top-4" alt="Carmen, a patrulheira 'Menina-Gás'">
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Carmen - Super-herói: Menina-Gás</h5>
+                            <p class="card-text text-muted">Inteligente e astuta, Carmen é a Menina-Gás, capaz de se movimentar com agilidade e rapidez, sempre usando a lógica para desvendar os desafios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="Davi.jpg" class="card-img-top rounded-top-4" alt="Davi, o patrulheiro 'Homem-Dispositivo'">
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Davi - Super-herói: Homem-Dispositivo</h5>
+                            <p class="card-text text-muted">Com sua habilidade tecnológica, Davi se torna o Homem-Dispositivo. Ele usa gadgets e seu intelecto para ajudar a equipe a resolver os problemas mais complexos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="valeria.jpg" class="card-img-top rounded-top-4" alt="Valéria, a patrulheira 'Menina-Coragem'">
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Valéria - Super-herói: Menina-Coragem</h5>
+                            <p class="card-text text-muted">A corajosa Valéria se transforma na Menina-Coragem, sempre disposta a enfrentar qualquer perigo para proteger seus amigos e lutar por aquilo que acredita.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="Jaime_Palillo.webp" class="card-img-top rounded-top-4" alt="Jaime, o patrulheiro 'Patrulheiro-Bruto'">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Jaime - Super-herói: Patrulheiro-Bruto</h5>
+                            <p class="card-text text-muted">Forte e com um coração enorme, Jaime é o Patrulheiro-Bruto. Sua força sobre-humana é a chave para a Patrulha superar os obstáculos mais difíceis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="kokimoto.jpg" class="card-img-top rounded-top-4" alt="Kokimoto, o patrulheiro 'Ninja'">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Kokimoto - Super-herói: Ninja</h5>
+                            <p class="card-text text-muted">Silencioso e ágil, Kokimoto é o Ninja da Patrulha. Ele usa sua discrição e velocidade para se infiltrar em locais e coletar informações essenciais para as missões.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="marcelina.webp" class="card-img-top rounded-top-4" alt="Marcelina, a patrulheira 'Menina-Prodígio'">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Marcelina - Super-herói: Menina-Prodígio</h5>
+                            <p class="card-text text-muted">Com sua mente brilhante e criativa, Marcelina é a Menina-Prodígio. Ela é a responsável por bolar os planos e estratégias para a equipe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="paulo.jpg" class="card-img-top rounded-top-4" alt="Paulo, o patrulheiro 'Flanelinha'">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Paulo - Super-herói: Flanelinha</h5>
+                            <p class="card-text text-muted">Conhecido por sua personalidade irreverente, Paulo se torna o Flanelinha. Ele usa sua capacidade de se desviar e sua esperteza para enganar os vilões.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="mario.webp" class="card-img-top rounded-top-4" alt="Mário, o patrulheiro 'Menino-Gato'">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Mário - Super-herói: Menino-Gato</h5>
+                            <p class="card-text text-muted">O Menino-Gato, Mário, tem sentidos aguçados e uma agilidade felina. Ele é o patrulheiro ideal para missões que exigem velocidade e percepção aguçada.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="alicia.jpg" class="card-img-top rounded-top-4" alt="Alícia, a patrulheira 'Menina-Raposa'">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Alícia - Super-herói: Menina-Raposa</h5>
+                            <p class="card-text text-muted">Corajosa e aventureira, Alícia é a Menina-Raposa, usando sua esperteza e agilidade para se mover por terrenos difíceis e surpreender os inimigos.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="laura.jpg" class="card-img-top rounded-top-4" alt="Laura, a patrulheira 'Voz da Coragem'">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Laura - Super-herói: Voz da Coragem</h5>
+                            <p class="card-text text-muted">Com sua bondade e sensibilidade, Laura é a Voz da Coragem, usando sua voz para acalmar as pessoas e dar força para a equipe.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="jorge.jpg" class="card-img-top rounded-top-4" alt="Jorgito, o vilão 'Repórter'">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Jorgito - Vilão: Repórter</h5>
+                            <p class="card-text text-muted">O vilão Jorgito é o Repórter, que usa seu poder de teletransporte e sua astúcia para causar problemas e tentar atrapalhar a Patrulha Salvadora.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="adriano.jpg" class="card-img-top rounded-top-4" alt="Adriano, o anti-herói 'Sombra'">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Adriano - Anti-herói: Sombra</h5>
+                            <p class="card-text text-muted">Misterioso e com o poder da invisibilidade, Adriano é o Sombra, um anti-herói que às vezes ajuda, mas na maioria das vezes causa confusão para a equipe.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card integrante-card h-100 text-center border-0 rounded-4 shadow-sm">
+                        <div class="card-img-container">
+                            <img src="matilde.jpg" class="card-img-top rounded-top-4" alt="Matilde, a patrulheira 'Super-Libras'">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Matilde - Super-herói: Super-Libras</h5>
+                            <p class="card-text text-muted">A brava Matilde é a Super-Libras, uma super-heroína que usa a Língua Brasileira de Sinais para se comunicar de forma secreta com a Patrulha.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="galeria" class="py-5 my-5">
+            <h2 class="display-5 fw-bold text-center mb-5">Galeria</h2>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-sm-6 col-md-3">
+                        <img src="1407690894sbt_patrulha_salvadora_geladeira.webp" class="img-fluid rounded-4 shadow-sm" loading="lazy" alt="Cena da série com os personagens em frente a uma geladeira">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="1390236018patrulha_salvadora_perde_audiencia_derrota_record_fixed_large.webp" class="img-fluid rounded-4 shadow-sm" loading="lazy" alt="Imagem promocional da Patrulha Salvadora">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="Elenco-Patrulha-Salvadora1.jpg" class="img-fluid rounded-4 shadow-sm" loading="lazy" alt="Elenco da série com seus uniformes de heróis">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="patrulha-salvadora-elenco-sbt_65e02f9c084830a42747acf21560f9f8850f7b3b.jpeg" class="img-fluid rounded-4 shadow-sm" loading="lazy" alt="Elenco da Patrulha Salvadora posando para foto oficial">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="contato" class="py-5 my-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="card p-4 p-md-5 shadow-lg border-0 rounded-4">
-                            <h2 class="display-5 fw-bold text-center mb-4">Entre em contato</h2>
-                            <form>
-                                <div class="mb-3">
-                                    <label for="nome" class="form-label">Nome</label>
-                                    <input type="text" id="nome" name="nome" class="form-control rounded-3" placeholder="Seu nome completo">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="seuemail@exemplo.com">
-                                </div>
-                                <div class="mb-4">
-                                    <label for="mensagem" class="form-label">Mensagem</label>
-                                    <textarea id="mensagem" name="mensagem" class="form-control rounded-3" rows="5" placeholder="Sua mensagem"></textarea>
-                                </div>
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-dark btn-lg rounded-pill">Enviar mensagem</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+        <section id="contato" class="py-5 my-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card p-4 p-md-5 shadow-lg border-0 rounded-4">
+                            <h2 class="display-5 fw-bold text-center mb-4">Entre em contato</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" id="nome" name="nome" class="form-control rounded-3" placeholder="Seu nome completo">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="seuemail@exemplo.com">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="mensagem" class="form-label">Mensagem</label>
+                                    <textarea id="mensagem" name="mensagem" class="form-control rounded-3" rows="5" placeholder="Sua mensagem"></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-dark btn-lg rounded-pill">Enviar mensagem</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <footer class="text-center py-4 bg-dark text-white">
-        <div class="container">
-            <p class="mb-2">Acesse nossas redes:</p>
-            <div class="social-icons mb-3">
-                <a href="#" class="text-white mx-2" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                <a href="#" class="text-white mx-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white mx-2" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-            </div>
-            <p class="text-muted fst-italic mb-0">Desenvolvido com carinho. Projeto fictício sem fins comerciais.</p>
-        </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
-    <script src="script.js"></script>
+    <footer class="text-center py-4 bg-dark text-white">
+        <div class="container">
+            <p class="mb-2">Acesse nossas redes:</p>
+            <div class="social-icons mb-3">
+                <a href="#" class="text-white mx-2" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="text-white mx-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white mx-2" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            </div>
+            <p class="text-muted fst-italic mb-0">Desenvolvido com carinho. Projeto fictício sem fins comerciais.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
